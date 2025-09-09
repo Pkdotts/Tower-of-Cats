@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 891fec8c9033d3c4b8849f1769cac1ef
+  - enabled: 1
+    path: Assets/Scenes/Levels/World_1/Level_1-1.unity
+    guid: d866eee745c893d48884d47c4f725201
+  - enabled: 1
+    path: Assets/Scenes/Levels/World_1/Level_1-2.unity
+    guid: 0db90ff10af07e748bab2b6393eae38a
+  - enabled: 1
+    path: Assets/Scenes/Levels/World_1/Level_1-3.unity
+    guid: e3f9152018452a940bcd8db9badbb4df
+  - enabled: 1
+    path: Assets/Scenes/Levels/World_1/Level_1-5.unity
+    guid: 572a9deef8bfdb24799cc17d1bbab557
+  - enabled: 1
+    path: Assets/Scenes/Levels/World_1/Level_1-4.unity
+    guid: 696203490182d3745a628136b1367155
+  - enabled: 1
+    path: Assets/Scenes/Levels/World_1/Level_1-6.unity
+    guid: f6186499f2e42ad4eb2c0f87bb9eefb2
+  - enabled: 1
+    path: Assets/Scenes/Levels/World_1/Level_1-7.unity
+    guid: 182d4827f3469e647871726d5e055fc6
+  - enabled: 1
+    path: Assets/Scenes/Levels/World_1/Level_1-8.unity
+    guid: 9b3f83f33e2b1ce498f7268fba017503
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0
