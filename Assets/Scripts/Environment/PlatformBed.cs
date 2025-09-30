@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class PlatformBed : Platform
 {
     private bool winner;

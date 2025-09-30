@@ -1,9 +1,6 @@
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CatController : MonoBehaviour
 {
@@ -21,6 +18,7 @@ public class CatController : MonoBehaviour
     {
         cats = catParent.GetComponentsInChildren<Cat>().ToList();
         SetSelectedCat(catIndex);
+        UpdatePoleAngle();
     }
 
     private void Update()
@@ -56,7 +54,7 @@ public class CatController : MonoBehaviour
             cat.SetPanic(GetFullLoad());
         }
 
-        if (platformParent.GetWinning() && nextLevel != null) {
+        if (!IsDead() && platformParent.GetWinning() && nextLevel != null) {
             UiManager.instance.SetLevelsPassed(currentLevel);
             Transition.instance.TransitionIn(nextLevel);
         }

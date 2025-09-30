@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class UiManager : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private bool active = true;
     public int levelsPassed = 0;
     public static UiManager instance;
     private void Awake()
@@ -36,7 +37,7 @@ public class UiManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab) && (SceneManager.GetActiveScene().name != "Title"))
         {
             if (pauseMenu.activeSelf)
                 Resume();

@@ -1,4 +1,4 @@
-repository "Tower of Cats 2025-03-21_19-21-47/Tower of Cats@3573522466071@cloud"
+repository "TowerOfCats/Tower of Cats@3573522466071@cloud"
   path "/"
     br "/main"
     co "/main"
